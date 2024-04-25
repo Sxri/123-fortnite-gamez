@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nanum+Gothic+Coding&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="games.css" rel="stylesheet" type="text/css">
+  <link href="themes.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class='title'>QX.7</div>
+    <a href="#home"><img src="img/home.png" alt="Home" id='home-btn'></a>
+    <a href="#games"><img src="img/games.png" alt="Games" id='games-btn'></a>
+    <a href="#store"><img src="img/store.png" alt="Store" id='play-btn'></a>
+    <a href="#"><img src="img/settings.png" alt="Settings"
+id='settings-btn'></a>
+  </div>
+  <div class="container" id="home">
+    <div class="title">QX.7<span style="font-size: 35px; font-weight: 
+      600;"> / The <span style="font-weight: 900;">HOME</span> Page</span></div>
+    <div class="featured_game">
+      <div class="title2">BitLife <span class="featuredTag1">FEATURED</span></div>
+      <button>Explore Games</button>
+    </div>
+    <div class="featured_product">
+      <div class="title2">Krampus <span class="featuredTag1">FEATURED</span></div>
+      <button style="background-color: red; outline: 0; border: 0;">Shop Products</button>
+    </div>
+  </div>
+  <div class="container" id="games">
+    <div class="title">QX.7<span style="font-size: 35px; font-weight: 
+      600;"> / The <span style="font-weight: 900;">GAMES</span> Catalog</span></div>
+    <div class="game_container">
+      <div class="card1" data-url="" id="viewcurrent-btn">
+        <img src="img/games/controller.png" alt="BitLife">
+        <div class="gameinfo">
+          <div class="title">Play Recent Game</div>
+          <div class="tags">
+            <div class="tag" style="background-color: black; box-shadow: 0px 0px 10px 0px rgba(0,0,0,1); color: white;">PINNED-TO-TOP</div>
+            <div class="tag" style="background-color: lime; box-shadow: 0px 0px 10px 0px rgba(0,255,0,1); color: white;">Recent Game</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-url="files/bitlife" id="play-btn">
+        <img src="img/games/bitlife.png" alt="BitLife">
+        <div class="gameinfo">
+          <div class="title">BitLife</div>
+          <div class="tags">
+            <div class="tag" style="background-color: cyan;">Simulator</div>
+            <div class="tag" style="background-color: pink;">2D</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-url="files/ovo/OvOUnblocked.github.io-main/index.html" id="play-btn">
+          <img src="img/games/ovo.png" alt="OvO">
+          <div class="gameinfo">
+            <div class="title">OvO (BROKEN)</div>
+            <div class="tags">
+              <div class="tag" style="background-color: red;">Platformer</div>
+              <div class="tag" style="background-color: lime;">Skill</div>
+              <div class="tag" style="background-color: pink;">2D</div>
+            </div>
+          </div>
+        </div>
+      <div class="card" data-url="files/Ovo2/OvO2-gh-pages/index.html" id="play-btn">
+        <img src="img/games/ovo-2.png" alt="Drift Hunters">
+        <div class="gameinfo">
+          <div class="title">OvO 2</div>
+          <div class="tags">
+            <div class="tag" style="background-color: red;">Platformer</div>
+            <div class="tag" style="background-color: lime;">Skill</div>
+            <div class="tag" style="background-color: pink;">2D</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-url="files/MonkeyMart-gh-pages/MonkeyMart-gh-pages/index.html" id="play-btn">
+        <img src="img/games/monkeymart.png" alt="Monkey Mart">
+        <div class="gameinfo">
+          <div class="title">Monkey Mart</div>
+          <div class="tags">
+            <div class="tag" style="background-color: cyan;">Simulator</div>
+            <div class="tag" style="background-color: chocolate;">2D/3D</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-url="files/1v1.lol-main/1v1.lol-main/index.html" id="play-btn">
+        <img src="img/games/OIP.jpg" alt="1v1.LOL">
+        <div class="gameinfo">
+          <div class="title">1v1.LOL</div>
+          <div class="tags">
+            <div class="tag" style="background-color: purple;">Shooter</div>
+            <div class="tag" style="background-color: yellow;">Action</div>
+            <div class="tag" style="background-color: lime;">Skill</div>
+            <div class="tag" style="background-color: white;">3D</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-url="files/ChickenMerge-gh-pages/ChickenMerge-gh-pages/index.html" id="play-btn">
+        <img src="img/games/chickenmerge.jpg" alt="Chicken Merge">
+        <div class="gameinfo">
+          <div class="title">Chicken Merge</div>
+          <div class="tags">
+            <div class="tag" style="background-color: cyan;">Simulator</div>
+            <div class="tag" style="background-color: pink;">2D</div>
+            <div class="tag" style="background-color: blue; box-shadow: 0px 0px 10px 0px rgba(0,0,255,1); color: white;">TRENDING</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-url="files/MrBullet-gh-pages/MrBullet-gh-pages/index.html" id="play-btn">
+        <img src="img/games/mrbullet.jpg" alt="Mr Bullet">
+        <div class="gameinfo">
+          <div class="title">Mr Bullet</div>
+          <div class="tags">
+            <div class="tag" style="background-color: lime;">Skill</div>
+            <div class="tag" style="background-color: pink;">2D</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-url="files/MrBullet3D-gh-pages/MrBullet3D-gh-pages/index.html" id="play-btn">
+        <img src="img/games/mrbullet3d.jpg" alt="Mr Bullet 3D">
+        <div class="gameinfo">
+          <div class="title">Mr Bullet [3D]</div>
+          <div class="tags">
+            <div class="tag" style="background-color: lime;">Skill</div>
+            <div class="tag" style="background-color: white;">3D</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-url="files/cookieclicker/cookieclicker-gh-pages/index.html" id="play-btn">
+        <img src="img/games/cc1.jpg" alt="Cookie Clicker">
+        <div class="gameinfo">
+          <div class="title">Cookie Clicker</div>
+          <div class="tags">
+            <div class="tag" style="background-color: blue; box-shadow: 0px 0px 10px 0px rgba(0,0,255,1); color: white;">TRENDING</div>
+            <div class="tag" style="background-color: cyan;">Simulator</div>
+            <div class="tag" style="background-color: pink;">2D</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-url="files/CookieClicker2-gh-pages/CookieClicker2-gh-pages/index.html" id="play-btn">
+        <img src="img/games/cc2.jpg" alt="Cookie Clicker 2">
+        <div class="gameinfo">
+          <div class="title">Cookie Clicker 2</div>
+          <div class="tags">
+            <div class="tag" style="background-color: cyan;">Simulator</div>
+            <div class="tag" style="background-color: pink;">2D</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-url="files/SubwaySurfers-gh-pages/SubwaySurfers-gh-pages/index.html" id="play-btn">
+        <img src="img/games/ss.png" alt="Subway Surfers">
+        <div class="gameinfo">
+          <div class="title">Subway Surfers</div>
+          <div class="tags">
+            <div class="tag" style="background-color: lime;">Skill</div>
+            <div class="tag" style="background-color: white;">3D</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="current">
+    <div class="title">QX.7<span style="font-size: 35px; font-weight: 
+      600;"> / The <span style="font-weight: 900;">GAME</span> Page</span>
+    </div>
+    <div class="desc" id="noodleguy">
+      (you need to choose a game to play first.. :/)
+    </div>
+    <div class="btn-holder">
+      <div class='fullscreen-btn' title="Fullscreen the game.">
+        ⛶
+      </div>
+      <div class='resize-btn' title="Fullscreen the game to the page, not screen.">
+        ↹
+      </div>
+      <div class='cloak-btn' title="Cloak the game in an about:blank tab. (Fullscreen)">
+        🡵
+      </div>
+    </div>
+    <div class='game_holder'>
+      <iframe class="gameFrame" id='gameFrame' src="404.html">
+        <h1>LOADING...</h1>
+      </iframe>
+    </div>
+  </div>
+  <div class="container" id="proxy1">
+    <div class="title">QX.7<span style="font-size: 35px; font-weight: 
+      600;"> / The <span style="font-weight: 900;">SETTINGS</span> Page</span>
+    </div>
+    <div class="proxy-container">
+      <input class="proxy-input" id="proxy-input" placeholder="Insert URL or Search Query...">
+      <div class="proxy-launch" id="proxy-launch">
+        <img src="img/search.png">
+      </div>
+    </div>
+    <div class="btn-holder">
+      <div class='fullscreen-btn' title="Fullscreen the proxied site.">
+        ⛶
+      </div>
+      <div class='resize-btn' title="Fullscreen the proxied website to the page, not screen.">
+        ↹
+      </div>
+      <div class='cloak-btn' title="Cloak the proxied website in an about:blank tab. (Fullscreen)">
+        🡵
+      </div>
+    </div>
+    <div class='proxy_holder'>
+      <iframe class="proxyFrame" id='proxyFrame' src="proxy404.html">
+      </iframe>
+    </div>
+  </div>
+  <div class="container" id="store">
+    <div class="title">QX.7<span style="font-size: 35px; font-weight: 
+      600;"> / The <span style="font-weight: 900;">CATALOG</span> Page</span>
+    </div>
+    <div class="settings-container">
+      <div class="settings-card" data-url="" id="rizz">
+        <div class="pricing">$7.98 - $50.00</div>
+        <img src="img/fortnite.jpg" alt="BitLife">
+        <div class="title">FNCHEAT
+          <div class="trendingicon">
+            <img src="img/trending.png">
+          </div>
+        </div>
+        <div class="gameinfo">
+          <h2>The best undetected internal/external cheat is here, providing users with the utmost best gaming experience possible.</h2>
+        </div>
+      </div>
+      <div class="settings-card" data-url="" id="rizz">
+        <div class="pricing">FREE</div>
+        <img src="img/fortnite.jpg" alt="BitLife">
+        <div class="title">FSKINV2</div>
+        <div class="gameinfo">
+          <h2>A high-quality free client fortnite skin changer, with custom model import capabilities, and risk-free usage!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="settings">
+    <div class="title">QX.7<span style="font-size: 35px; font-weight: 
+      600;"> / The <span style="font-weight: 900;">SETTINGS</span> Page</span>
+    </div>
+    <div class="settings-container">
+      <div class="settings-option" data-url="" id="rizz">
+        <div class="title">TAB TITLE</div>
+        <div class="settings-content">
+          <input placeholder="Insert Tab Title..." id="tab-title">
+        </div>
+      </div>
+      <div class="settings-option" data-url="" id="rizz">
+        <div class="title">TAB ICON</div>
+        <div class="settings-content">
+          <input placeholder="Insert Favicon URL..." id="icon-url">
+        </div>
+      </div>
+      <div class="settings-option" data-url="" id="rizz">
+        <div class="title">SITE THEME</div>
+        <div class="settings-content">
+          <select id="theme-select">
+            <option value="default">Darkmode</option>
+            <option value="light">Lightmode</option>
+            <option value="ocean">Ocean</option>
+            <option value="midnight">Midnight</option>
+            <option value="hacker">Hacker</option>
+            <option value="azure">Azure Solitude</option>
+          </select>
+        </div>
+      </div>
+      <div class="settings-option" data-url="" id="rizz" style="  box-shadow: 0px 0px 30px 0px rgba(255,0,0,1);">
+        <div class="title" style="color: red;">SAVE CHANGES</div>
+        <div class="settings-content">
+          <div class="save-btn" style="background-color: red; color: white;" id="save-func" onclick="alert('Successfully saved changes!')">!! SAVE CHANGES !!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

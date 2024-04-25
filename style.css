@@ -1,0 +1,295 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 20px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  width: 80px;
+  height: 95vh;
+  border-radius: 10px;
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.navbar a {
+  width: 40px;
+  height: 40px;
+  color: white;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  transition: transform 0.3s;
+}
+
+.navbar a:hover {
+  transform: rotate(10deg);
+}
+
+.navbar a img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .title {
+  color: white;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.container {
+  border-radius: 10px;
+  width: 100vw;
+  height: 95vh;
+  margin-left: 20px;
+  background-color: #303030;
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100px, 100px);
+  }
+}
+
+.container .featured_game::before,
+.container .featured_product::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  /* Start from above the visible area */
+  left: -100px;
+  /* Start from above the visible area */
+  width: 200%;
+  height: 200%;
+  opacity: 30%;
+  
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  animation: scroll 3s linear infinite;
+  transform: rotate(-90deg);
+}
+
+.container .featured_game::before {
+  background-image: url('img/games/bitlife.png');
+}
+
+.container .featured_product::before {
+  background-image: url('img/products/exploit.png');
+}
+
+.container .featured_game,
+.container .featured_product {
+  margin: 20px;
+  overflow: hidden;
+  /* Prevents image overflow */
+  width: 95%;
+  height: 250px;
+  background-color: black;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,1);
+
+  /* Add these lines to use flexbox layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Change this from center to flex-start */
+  padding-left: 20px; /* Add some padding to the left */
+}
+
+.container .game_container {
+  padding: 10px;
+  margin: 20px;
+  overflow: auto; /* Change this from hidden to auto to make the container scrollable */
+  width: 95%;
+  height: 95%;
+  background-color: black;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,1);
+
+  /* Modify these lines to use flexbox layout */
+  display: flex;
+  flex-direction: row; /* Change this from column to row */
+  flex-wrap: wrap; /* Add this line to allow the items to wrap to the next line */
+  align-items: flex-start;
+  justify-content: center; /* Change this from flex-start to center */
+  gap: 10px; /* Change this from 20px to 10px */
+}
+
+
+.container .game_container .card {
+  cursor: pointer;
+  width: 250px;
+  height: 375px;
+  background-color: #303030;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,1);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.container .game_container .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,1);
+  z-index: 2;
+}
+
+.container .game_container .card img {
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,1);
+}
+
+.container .game_container .card .gameinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 120px;
+  background-color: #303030;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,1);
+}
+
+.container .game_container .card .gameinfo .tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.container .game_container .card .gameinfo .tag {
+  text-align: center;
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 2px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.container .game_container .card .title {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: 'Lexend' sans-serif;
+  font-weight: 900;
+}
+
+
+.container .featured_game .title2,
+.container .featured_product .title2 {
+  /* Remove the absolute positioning */
+  font-size: 40px;
+  color: white;
+  opacity: 100%;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 900;
+  opacity: 100%;
+}
+
+
+.featuredTag1 {
+  position: absolute;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #ff3737;
+  font-size: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.container .featured_game button,
+.container .featured_product button {
+  outline: none;
+  width: 280px;
+  background-color: #0088ff;
+  border-radius: 10px;
+  height: 50px;
+  text-decoration: none;
+  margin-top: 20px; /* Add some margin to the top */
+  font-size: 20px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+
+.container .featured_game button:hover,
+.container .featured_product button:hover {
+  transform: rotate(2deg);
+}
+
+.container .featured_game button1,
+.container .featured_product button1 {
+  outline: none;
+  width: 280px;
+  background-color: #ff0000;
+  border-radius: 10px;
+  height: 50px;
+  text-decoration: none;
+  margin-top: 20px; /* Add some margin to the top */
+  font-size: 20px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+
+.container .featured_game button1:hover,
+.container .featured_product button1:hover {
+  transform: rotate(2deg);
+}
+
+.container .featured_product img,
+.container .featured_game img {
+  color: white;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.container .title {
+  font-size: 65px;
+  color: white;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 900;
+}
+
+.container .desc {
+  font-size: 35px;
+  color: white;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+}

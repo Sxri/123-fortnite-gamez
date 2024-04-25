@@ -1,0 +1,281 @@
+body.default {
+  /* Default theme colors */
+  background-color: black;
+}
+
+body.ocean {
+  background-color: #00004b;
+}
+
+body.midnight {
+  /* Midnight theme colors */
+  background-color: #160629;
+}
+
+body.light {
+  /* Midnight theme colors */
+  background-color: #a8a8a8;
+}
+
+body.hacker {
+  /* Midnight theme colors */
+  background-color: black;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20211009/pngtree-matrix-data-code-hacker-background-image_908351.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.azure {
+  background-size: 200% 200%;
+  background-image: linear-gradient(45deg, #0b5351, #092327);
+  animation: Gradient 3s ease-in-out infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/*********************************************************************
+                         -- NAVBAR THEMES --
+*********************************************************************/
+
+.navbar.default {
+  background-color: #2b2b2b;
+}
+
+.navbar.ocean {
+  background-color: #282882;
+}
+
+.navbar.midnight {
+  background-color: #260660;
+}
+
+.navbar.light {
+  background-color: white;
+}
+
+.navbar.light a {
+  color: black;
+  -webkit-filter: invert(0%);
+  filter: invert(0%);
+}
+
+.navbar.hacker {
+  background-color: black;
+  border: 3px solid lime;
+}
+
+.navbar.azure {
+  background-color: #00a9a5;
+}
+
+.navbar.azure a {
+  color: black;
+  -webkit-filter: invert(0%);
+  filter: invert(0%);
+}
+
+/*********************************************************************
+                       -- CONTAINER THEMES --
+*********************************************************************/
+
+.container.default {
+  background-color: #2b2b2b;
+}
+
+.container.ocean {
+  background-color: #282882;
+}
+
+.container.midnight {
+  background-color: #260660;
+}
+
+.container.light {
+  background-color: white;
+}
+
+.container.hacker {
+  background-color: black;
+  border: 3px solid lime;
+}
+
+.container.azure {
+  background-color: #00a9a5;
+}
+
+/*********************************************************************
+                         -- NAVBAR LINK THEMES --
+*********************************************************************/
+
+.navbar.default a {
+  color: #ffffff;
+}
+
+.navbar.ocean a {
+  color: #ffffff;
+}
+
+.navbar.midnight a {
+  color: #ffffff;
+}
+
+.navbar.light a {
+  color: black;
+}
+
+.navbar.hacker a {
+  color: lime;
+}
+
+.navbar.azure a {
+  color: black;
+}
+
+/*********************************************************************
+                         -- NAVBAR TITLE THEMES --
+*********************************************************************/
+
+.navbar.default .title {
+  color: #ffffff;
+}
+
+.navbar.ocean .title {
+  color: #ffffff;
+}
+
+.navbar.midnight .title {
+  color: #ffffff;
+}
+
+.navbar.light .title {
+  color: black;
+}
+
+.navbar.azure .title {
+  color: black;
+}
+
+.navbar.hacker .title {
+  color: lime;
+}
+
+/*********************************************************************
+                         -- CONTAINER TITLE THEMES --
+*********************************************************************/
+
+.container.default .title {
+  color: #ffffff;
+}
+
+.container.ocean .title {
+  color: #ffffff;
+}
+
+.container.midnight .title {
+  color: #ffffff;
+}
+
+.container.light .title {
+  color: black;
+}
+
+.container.azure .title {
+  color: black;
+}
+
+.container.hacker .title {
+  color: lime;
+}
+
+/*********************************************************************
+                    -- CONTAINER DESCRIPTION THEMES --
+*********************************************************************/
+
+.container.default .desc {
+  color: #ffffff;
+}
+
+.container.ocean .desc {
+  color: #ffffff;
+}
+
+.container.midnight .desc {
+  color: #ffffff;
+}
+
+.container.light .desc {
+  color: black;
+}
+
+.container.azure .desc {
+  color: black;
+}
+
+.container.hacker .desc {
+  color: lime;
+}
+
+/*********************************************************************
+                -- CARD DESCRIPTION/TITLE THEMES --
+*********************************************************************/
+
+.container.default .card .title {
+  color: white;
+}
+
+.container.ocean .card .title {
+  color: white;
+}
+
+.container.midnight .card .title {
+  color: white;
+}
+
+.container.light .card .title {
+  color: white;
+}
+
+.container.azure .card .title {
+  color: white;
+}
+
+.container.hacker .card .title {
+  color: lime;
+}
+
+/* -  SETTINGS TITLE SECTION  - */
+
+.container.default .settings-card .title {
+  color: white;
+}
+
+.container.ocean .settings-card .title {
+  color: white;
+}
+
+.container.midnight .settings-card .title {
+  color: white;
+}
+
+.container.light .settings-card .title {
+  color: white;
+}
+
+.container.azure .settings-card .title {
+  color: white;
+}
+
+.container.hacker .settings-card .title {
+  color: lime;
+}
