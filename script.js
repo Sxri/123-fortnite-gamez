@@ -1,11 +1,11 @@
 $(document).ready(function() {
+    alert("!!! IMPORTANT ALERT !!!\n\nThis website is still undergoing SERIOUS CRUCIAL DEVELOPMENT! Bugs WILL occur. Please read the list below of current errors & ways around them.\n\n- How to play game?\n   + We have only two current functioning games... but when you select one, press the first card in the games section that reads 'view current game' to play.\n\n- How to view tabs/sections?\n   + Use navbar on the left of your screen... the home screen buttons dont work, gotta work on that.\n\n- Whats the catalog/store?\n   + i dunno, gotta wait until people sponsor me (which will be after development is finished unfortunately..)\n\nOk go have fun now i guess with the two games. the themes are pretty cool tho too i think :)")
     $('#games').hide();
     $('#current').hide();
     $('#store').hide();
     $('#settings').hide();
     $('#proxy1').hide();
     $('#home').show();
-    document.title = "OHIO!";
 });
 
 $(document).ready(function() {
